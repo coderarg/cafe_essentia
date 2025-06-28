@@ -18,6 +18,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fuente-inter);
+    color: var(--texto-secundario);
 }
 
 .titulo {
@@ -34,3 +36,28 @@
     background-color: var(--botones);
     color: var(--texto-blanco);
 }
+
+/* Extra small */
+@media (width < 576px) {
+}
+
+/* Small */
+@media (width >= 576px) {
+}
+
+/* Medium */
+@media (width >= 768px) {
+}
+
+/* Large */
+@media (width >= 992px) {
+}
+
+/* Extra large */
+@media (width >= 1200px) {
+}
+
+/* Extra extra large */
+@media (width >= 1400px) {
+}
+
