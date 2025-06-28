@@ -1,0 +1,36 @@
+@import url('./fonts/Manrope/Manrope-VariableFont_wght.ttf');
+@import url('./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
+@import url('./fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf');
+
+:root {
+    --fondo: #F2E8D9;
+    --botones: #361E13;
+    --texto-principal: #1C120D;
+    --texto-secundario: #9C6B4A;
+    --texto-blanco: #FFFFFF;
+    --verde-contraste: #668B8B;
+
+    --fuente-manrope: 'Manrope', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: var(--fuente-manrope);
+    color: var(--texto-principal);
+}
+
+.texto {
+    font-family: var(--fuente-inter);
+    color: var(--texto-secundario);
+}
+
+.button_menu {
+    background-color: var(--botones);
+    color: var(--texto-blanco);
+}
