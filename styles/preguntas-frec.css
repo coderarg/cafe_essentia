@@ -1,0 +1,87 @@
+/* Ajuste de separación para navbar en mobile */
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  main h1,
+  h4,
+  p,
+  span,
+  .accordion-button {
+    text-align: left !important;
+  }
+
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px dashed #c0b6a5;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+footer i,
+footer svg path {
+  color: #9C6B4A;
+  fill: #9C6B4A;
+}
+
+footer p {
+  color: #9C6B4A;
+  font-size: 0.9rem;
+}
+
+.button_menu {
+  background-color: var(--botones);
+  color: var(--texto-blanco);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.accordion-custom .accordion-item {
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 12px #e6e1d9;
+  border: 1px solid #e6e1d9;
+  overflow: hidden;
+}
+.accordion-custom .accordion-button {
+  background: #fcfaf7;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000 !important;
+  transition: background 0.2s;
+  border: none;
+  box-shadow: none;
+  padding: 1.1rem 1.5rem;
+}
+.accordion-custom .accordion-button:not(.collapsed) {
+  background: #f5ede3;
+  color: #000 !important;
+}
+.accordion-custom .accordion-body {
+  background: #fff;
+  font-size: 17px;
+  color: #000 !important;
+  padding: 1.2rem 1.5rem;
+}
+.accordion-custom .accordion-button::after {
+  font-family: "Bootstrap-icons";
+  content: "\f282";
+  font-size: 1.2rem;
+  color: #8b5e3c;
+  background: none;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+.accordion-custom .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
