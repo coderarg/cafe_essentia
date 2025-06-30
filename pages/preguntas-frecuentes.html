@@ -1,72 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/global-styles.css">
-    <meta name="description"
-        content="Essentia es un café que ofrece una experiencia única con un enfoque en la calidad y el bienestar.">
-    <meta name="keywords" content="café, calidad, experiencia, Essentia">
-    <meta name="author" content="Essentia">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/global-styles.css" />
+  <meta name="description" content="Essentia es un café que ofrece una experiencia única con un enfoque en la calidad y el bienestar." />
+  <meta name="keywords" content="café, calidad, experiencia, Essentia" />
+  <meta name="author" content="Essentia" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <title>Preguntas Frecuentes - Essentia</title>
 
-    <title>Essentia</title>
+  <style>
+    body {
+      background-color: #FCFAF7;
+      padding-top: 80px;
+    }
+
+    @media (max-width: 991.98px) {
+      body {
+        padding-top: 100px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav class=" navbar navbar-expand-lg fixed-top mt-4 mt-lg-0 py-4 py-lg-2">
-            <div class="container-fluid">
-                <a class="navbar-brand titulo ms-4 ms-lg-2" href="#">Essentia</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title titulo" id="offcanvasDarkNavbarLabel">Essentia</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link mx-3 px-1" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-3 px-1" href="#">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-3 px-1" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-3 px-1" href="#">Preguntas Frecuentes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-3 px-1" href="#">Galería</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex justify-content-center align-items-center">
-                            <button class="btn button_menu mx-3 px-4">Menú</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top py-4 py-lg-2 border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand titulo ms-4 ms-lg-2" href="#">Essentia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title titulo" id="offcanvasDarkNavbarLabel">Essentia</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link mx-3 px-1" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3 px-1" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3 px-1" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3 px-1" href="#">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3 px-1" href="#">Galería</a>
+              </li>
+            </ul>
+            <form class="d-flex justify-content-center align-items-center">
+              <button class="btn mx-3 px-4" style="background-color: #1C120D; color: white; border-radius: 6px;">
+                Menú
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    </main>
-    <footer>
+  <!-- preguntas frecuentes -->
+  <main class="container py-5 mt-0">
+    <h2 class="fw-bold mb-4 text-start text-sm-center ">Preguntas Frecuentes</h2>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+    <!-- Versión Desktop -->
+    <div class="d-none d-sm-block">
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-transparent text-dark fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse1">
+              ¿Cómo se prepara el Cold Brew?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Respuesta</div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapse2">
+              ¿Cortado = Flat White?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Respuesta</div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapse3">
+              ¿Medialuna o Croissant?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Respuesta</div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapse4">
+              Pregunta Frecuente
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Respuesta</div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapse5">
+              Pregunta Frecuente
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Respuesta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Versión Mobile -->
+    <div class="d-block d-sm-none">
+      <div>
+        <h4 class="fw-bold">Email</h4>
+        <hr>
+        <div>
+          <span style="color: #9C6B4A;">Email</span><br>
+          info@essentia.com
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h4 class="fw-bold">Ubicación</h4>
+        <hr>
+        <div>
+          <span style="color: #9C6B4A;">Dirección</span><br>
+          Alvear 123, San Martin, CABA
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h4 class="fw-bold">Contacto de llamados</h4>
+        <hr>
+        <div>
+          <span style="color: #9C6B4A;">Phone</span><br>
+          (555) 123-4567
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h4 class="fw-bold">Horarios de Atención</h4>
+        <hr>
+        <div class="row">
+          <div class="col-6">
+            <span style="color: #9C6B4A;">Martes - Viernes</span><br>
+            7:00 AM - 7:00 PM
+          </div>
+          <div class="col-6">
+            <span style="color: #9C6B4A;">Sábado - Domingo</span><br>
+            7:00 AM - 7:00 PM
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="text-center py-4">
+    <div class="mb-2 d-flex justify-content-center gap-4">
+      <a href="#" target="_blank" style="display: flex; align-items: center;">
+        <svg width="20" height="20" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="120" height="120" fill="none"/>
+          <path d="M90 20H110L70 60L110 100H90L60 70L30 100H10L50 60L10 20H30L60 50L90 20Z" fill="#8B5E3C"/>
+        </svg>
+      </a>
+      <i class="bi bi-instagram" style="font-size: 20px; color: #8B5E3C;"></i>
+      <i class="bi bi-facebook" style="font-size: 20px; color: #8B5E3C;"></i>
+    </div>
+    <p class="m-0" style="color: #9C6B4A;">© 2024 Essentia. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
