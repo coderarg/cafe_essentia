@@ -1,0 +1,129 @@
+body {
+  background-color: var(--fondo);
+}
+
+.menu-section {
+  margin-bottom: 2.5rem;
+  padding-right: 1.5rem;
+}
+
+/* títulos de sección */
+.menu-section h2 {
+  margin-bottom: 1rem;
+  font-family: var(--fuente-manrope);
+  color: var(--texto-principal);
+  font-weight: bold;
+}
+
+/* cada línea de menú con precio a la derecha */
+.menu-item,
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.menu-item span,
+.payment-title,
+.payment-desc {
+  color: var(--texto-principal);
+}
+
+/* ajusta lista de pagos un poco */
+.payment-list {
+  padding-left: 0;
+}
+
+/* Líneas punteadas entre nombre y precio */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.25rem 0;
+  border-bottom: 1px dotted var(--texto-principal);
+}
+
+/* Asegura que el span del precio quede a la derecha */
+.menu-item span:last-child {
+  margin-left: 1rem; 
+  white-space: nowrap;
+}
+
+.payment-title {
+  font-family: var(--fuente-manrope);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--texto-principal);
+}
+
+.payment-desc {
+  margin: 0;
+  line-height: 1.4;
+  color: var(--texto-principal);
+}
+
+.menu-item {
+  border-bottom: 0.15rem dotted gray;
+}
+
+/* tamaño y espaciado de los iconos */
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 12px;
+}
+
+footer{
+  background-color: var(--fondo);
+}
+
+/* Extra small */
+@media (width < 576px) {
+  /* Convierte los col-12 en 3 columnas iguales */
+  .menu-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-section .row > [class*="col-12"] {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* Small */
+@media (width >= 576px) {
+  /* Convierte los col-12 en 3 columnas iguales */
+  .menu-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-section .row > [class*="col-12"] {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* Medium */
+@media (width >= 768px) {
+}
+
+/* Large */
+@media (width >= 992px) {
+}
+
+/* Extra large */
+@media (width >= 1200px) {
+}
+
+/* Extra extra large */
+@media (width >= 1400px) {
+}
+
+/* entre md (>=768px) y antes de lg (<992px), fuerza full-width */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .menu-section .row > .col-md-4 {
+    /* anula el col-md-4 original */
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}

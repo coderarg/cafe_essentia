@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/global-styles.css">
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <link rel="stylesheet" href="../styles/menu.css">
     <meta name="description"
         content="Essentia es un café que ofrece una experiencia única con un enfoque en la calidad y el bienestar.">
     <meta name="keywords" content="café, calidad, experiencia, Essentia">
@@ -17,7 +18,7 @@
 
 <body>
     <header>
-        <nav class=" navbar navbar-expand-lg fixed-top mt-4 mt-lg-0 py-4 py-lg-2">
+        <nav class=" navbar navbar-expand-lg sticky-top mt-4 mt-lg-0 py-4 py-lg-2">
             <div class="container-fluid">
                 <a class="navbar-brand titulo ms-4 ms-lg-2" href="#">Essentia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -58,11 +59,104 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="pt-3 mt-3">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <section class="menu-section">
+                    <h2>Café &amp; Infusiones</h2>
+                    <ul class="list-unstyled">
+                        <li class="menu-item"><span>Expresso</span><span>$2700</span></li>
+                        <li class="menu-item"><span>Expresso Doble</span><span>$2700</span></li>
+                        <li class="menu-item"><span>Americano</span><span>$2700</span></li>
+                        <li class="menu-item"><span>Americano Doble</span><span>$3000</span></li>
+                        <li class="menu-item"><span>Cortado</span><span>$3000</span></li>
+                        <li class="menu-item"><span>Latte</span><span>$3000</span></li>
+                        <li class="menu-item"><span>Flat White</span><span>$3500</span></li>
+                        <li class="menu-item"><span>Submarino</span><span>$5000</span></li>
+                        <li class="menu-item"><span>Te en hebras</span><span>$3000</span></li>
+                        <li class="menu-item"><span>Matcha</span><span>$4000</span></li>
+                        <li class="menu-item"><span>Matcha Latte</span><span>$4000</span></li>
+                        <li class="menu-item"><span> Leche de Almendras</span><span>$500</span></li>
+                    </ul>
+                    </section>
+                    <section class="menu-section">
+                    <h2>Dulce</h2>
+                    <ul class="list-unstyled">
+                        <li class="menu-item"><span>Medialuna</span><span>$2500</span></li>
+                        <li class="menu-item"><span>Cookie Chocolate</span><span>$3500</span></li>
+                        <li class="menu-item"><span>Budín de Limón</span><span>$3500</span></li>
+                        <li class="menu-item"><span>Alfajor</span><span>$3000</span></li>
+                        <li class="menu-item"><span>Torta</span><span>$7000</span></li>
+                    </ul>
+                    </section>
+                    <section class="menu-section">
+                    <h2>Salado</h2>
+                    <ul class="list-unstyled">
+                        <li class="menu-item"><span>Medialuna J&amp;Q</span><span>$3000</span></li>
+                        <li class="menu-item"><span>Chipa</span><span>$3500</span></li>
+                        <li class="menu-item"><span>Tostado J&amp;Q</span><span>$3500</span></li>
+                        <li class="menu-item"><span>Carlitos</span><span>$4000</span></li>
+                        <li class="menu-item"><span>Arepa J&amp;Q</span><span>$3000</span></li>
+                    </ul>
+                    </section>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <section class="menu-section">
+                    <h2>Desayuno</h2>
+                    <ul class="list-unstyled">
+                        <li class="menu-item"><span>Desayuno Argento</span><span>$5000</span></li>
+                        <li class="menu-item"><span>Desayuno Venezuela</span><span>$5000</span></li>
+                        <li class="menu-item"><span>Desayuno Yankee</span><span>$7000</span></li>
+                        <li class="menu-item"><span>Desayuno Alemanen</span><span>$7000</span></li>
+                        <li class="menu-item"><span>Desayuno Instagram</span><span>$8000</span></li>
+                        <li class="menu-item"><span>Desayuno Fitness</span><span>$8000</span></li>
+                    </ul>
+                    </section>
+                    <section class="menu-section">
+                    <h2>Almuerzo</h2>
+                    <ul class="list-unstyled">
+                        <li class="menu-item"><span>Plato de la Casa (consultar)</span><span>$12000</span></li>
+                        <li class="menu-item"><span>Guiso de Lentejas con Cerdo</span><span>$12000</span></li>
+                        <li class="menu-item"><span>Guiso de Lentejas con Hongos (vegano)</span><span>$12000</span></li>
+                        <li class="menu-item"><span>Tarta de Verduras (porción)</span><span>$7000</span></li>
+                        <li class="menu-item"><span>Tarta Pollo y Puerro (porción)</span><span>$7000</span></li>
+                        <li class="menu-item"><span>Tarta Jamón y Queso (porción)</span><span>$7000</span></li>
+                        <li class="menu-item"><span>Empanada (consultar gustos)</span><span>$2000</span></li>
+                    </ul>
+                    </section>
+                    <section class="menu-section">
+                        <h2>Medios de Pago</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                            <p class="payment-title">Mercado Pago</p>
+                            <p class="payment-desc">Transferencia</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                            <p class="payment-title">Cuenta DNI</p>
+                            <p class="payment-desc">15% Desc<br>Viernes</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                            <p class="payment-title">Efectivo</p>
+                            <p class="payment-desc">10% Desc<br>Sábados<br>Domingos</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 
     </main>
     <footer>
-
+        <div class="container text-center py-4">
+            <div class="mb-3">
+                <a href="#"><img src="../imgs/logos/x-logo.png" alt="Essentia X" class="social-icon"></a>
+                <a href="#"><img src="../imgs/logos/instagram-logo.png" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="../imgs/logos/facebook-logo-png.png" alt="Facebook" class="social-icon"></a>
+            </div>
+            <p class="text-brand small mb-0">© 2024 Essentia. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
