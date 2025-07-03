@@ -59,19 +59,41 @@
         </nav>
     </header>
     <main>
+        <div class="container texto mb-5" style="max-width: 900px; font-family: var(--fuente-manrope);"></div>
         <section class="container my-5">
         <h2 class="titulo-principal mb-4 titulo">Contacto</h2>
-        <p class="mb-3 titulo">
-            ¡Nos encantaría saber de ti! Si tenés alguna pregunta sobre nuestro café, querés darnos tu opinión
-            o simplemente saludarnos, no dudes en contactarnos.
+        <p class="mb-3 titulo d-none d-sm-block">
+        ¡Nos encantaría saber de ti! Si tenés alguna pregunta sobre nuestro café, querés darnos tu opinión
+        o simplemente saludarnos, no dudes en contactarnos.
         </p>
-        <h3 class="titulo-secundario mb-3 titulo">Ubicación</h3>
+
+        <p class="mb-3 titulo d-block d-sm-none">Si te gustó nuestro espacio y te gustaría hacer de él tu nuevo lugar de trabajo, enviános tu CV y en caso de haber puestos vacantes. 
+Estamos abiertos a nuevos proveedores, también podes enviarnos un mensaje en caso que quieras charlar con un café de por medio. </p>
+        <form class="formulario d-block d-sm-none ">
+            <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+            </div>
+            <div class="col-md-6 mt-3">
+                <input type="text" class="form-control" id="apellido" placeholder="Correo electrónico">
+            </div>
+            </div>
+            <div class="mb-3">
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje..."></textarea>
+            </div>
+            
+            <div class="text-center ">
+            <button type="submit" class="btn button_menu mx-3 px-4">Contactar</button>
+            </div>
+
+        </form>
+        <h3 class="titulo-secundario mb-3 titulo mt-3">Ubicación</h3>
         <div class="mb-5" style="display: flex; justify-content: center;">
             <img 
                 src="../imgs/contacto.png" 
                 alt="Mapa de ubicación"
                 style="
-                    width: 90%; 
+                    width: 80%; 
                     max-width: 900px; 
                     border-radius: 18px; 
                     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
@@ -79,39 +101,41 @@
                 "
             >
         </div>
-        <h3 class="titulo-secundario mb-3 titulo">Información de Contacto</h3>
-        <div class="row texto mb-5" style="max-width: 900px;">
-            <div class="col-md-4 mb-3">
+        
+        <h5 class="fw-bold" style="color: var(--texto-principal);">Información de Contacto</h5>
+        <div class="row">
+            <div class="col-6 mb-3">
             <hr>
-            <strong>Dirección</strong><br>
-            <p class="titulo">123 Alvear, San Martín, CABA</p>
-            
+            <strong style="color: var(--texto-secundario);">Dirección</strong><br>
+            <p class="titulo">Alvear 123, San Martín, CABA</p>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-6 mb-3">
             <hr>
-            <strong>Phone</strong><br>
+            <strong style="color: var(--texto-secundario);">Phone</strong><br>
             <p class="titulo">(555) 123-4567</p>
-            
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-12 mb-3">
             <hr>
-            <strong>Email</strong><br>
+            <strong style="color: var(--texto-secundario);">Email</strong><br>
             <p class="titulo">info@essentia.com</p>
             </div>
         </div>
         <h3 class="titulo-secundario mb-3 titulo">Horarios</h3>
         <div class="row texto" style="max-width: 700px;">
-            <div class="col-md-6 mb-3 ">
-            <hr>
-            <strong>Martes a Viernes</strong><br>
-            <p class="titulo">7:00 AM - 7:00 PM</p>
+            <div class="row">
+             <div class="col-12 col-sm-6 mb-3">
+                <hr>
+                <strong>Martes a Viernes</strong><br>
+                <p class="titulo">7:00 AM - 7:00 PM</p>
             </div>
-            <div class="col-md-6 mb-3">
-            <hr>
-            <strong>Sábados y Domingos</strong><br>
-            <p class="titulo">8:00 AM - 7:00 PM</p>
-        
+            <div class="col-12 col-sm-6 mb-3">
+                <hr>
+                <strong>Sábados y Domingos</strong><br>
+                <p class="titulo">8:00 AM - 7:00 PM</p>
+            </div>   
             </div>
+            
+        </div>
         </div>
         </section>
     </main>
