@@ -26,6 +26,18 @@
     background-color: var(--fondo);
 }
 
+.logo__essentia {
+    height: 70px;
+    margin-left: 50px;
+}
+
+.logo__titulo {
+    font-family: var(--fuente-manrope);
+    color: #AB6740;
+    font-size: 27px;
+    text-decoration: none;
+}
+
 .titulo {
     font-family: var(--fuente-manrope);
     color: var(--texto-principal);
