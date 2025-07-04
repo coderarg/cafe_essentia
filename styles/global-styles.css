@@ -6,7 +6,7 @@
     --fondo: #F2E8D9;
     --botones: #361E13;
     --texto-principal: #1C120D;
-    --texto-secundario: #9C6B4A;
+    --texto-secundario: #1C120D;
     --texto-blanco: #FFFFFF;
     --verde-contraste: #668B8B;
 
@@ -32,10 +32,9 @@
     font-size: 32px;
 }
 
-.texto {
+p {
     font-family: var(--fuente-inter);
     color: var(--texto-secundario);
-    font-size: 20px;
 }
 
 .texto-blanco {
