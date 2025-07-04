@@ -27,6 +27,13 @@ body {
 .payment-title,
 .payment-desc {
   color: var(--texto-principal);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.payment-desc {
+  color: var(--texto-principal);
+  font-size: 0.7rem;
 }
 
 /* ajusta lista de pagos un poco */
