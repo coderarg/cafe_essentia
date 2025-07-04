@@ -7,17 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/global-styles.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <meta name="description"
         content="Essentia es un café que ofrece una experiencia única con un enfoque en la calidad y el bienestar.">
     <meta name="keywords" content="café, calidad, experiencia, Essentia">
     <meta name="author" content="Essentia">
-
     <title>Essentia</title>
 </head>
 
 <body>
     <header>
-        <nav class=" navbar navbar-expand-lg fixed-top mt-4 mt-lg-0 py-4 py-lg-2">
+        <nav class=" navbar navbar-expand-lg mt-4 mt-lg-0 py-4 py-lg-2">
             <div class="container-fluid">
                 <a class="navbar-brand titulo ms-4 ms-lg-2" href="#">Essentia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -59,10 +59,30 @@
         </nav>
     </header>
     <main>
+        <div class="card col-12 col-lg-8 mx-auto">
+            <img src="./imgs/banner-inicio.webp" class="card-img" alt="imagen cafe banner inicio">
+            <div class="card-img-overlay texto-blanco banner__container p-5">
+                <h5 class="text-center titulo texto-blanco banner__titulo">Explora Nuestro Café</h5>
+                <p class="text-center texto-blanco banner__texto">Descubre nuestra cuidada selección de granos de café,
+                    cada uno con una historia y un perfil de sabor únicos. Desde ligeros y afrutados hasta oscuros e
+                    intensos, encuentra tu taza perfecta.</p>
+                <button class="btn button_menu mx-3 px-4 banner__boton">Menú</button>
+            </div>
+        </div>
 
     </main>
-    <footer>
-
+    <footer class="text-center py-4">
+        <div class="mb-2 d-flex justify-content-center gap-4">
+            <a href="#" target="_blank" style="display: flex; align-items: center;">
+                <svg width="20" height="20" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="120" height="120" fill="none" />
+                    <path d="M90 20H110L70 60L110 100H90L60 70L30 100H10L50 60L10 20H30L60 50L90 20Z" fill="#8B5E3C" />
+                </svg>
+            </a>
+            <i class="bi bi-instagram" style="font-size: 20px;"></i>
+            <i class="bi bi-facebook" style="font-size: 20px;"></i>
+        </div>
+        <p class="m-0 texto text-center">© 2024 Essentia. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
