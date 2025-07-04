@@ -22,21 +22,6 @@ section img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-footer .social-icons {
-  margin-bottom: 1rem;
-}
-
-footer .social-icons i {
-  margin: 0 .75rem;
-  font-size: 1.5rem;
-  color: var(--texto-secundario);
-  vertical-align: middle;
-}
-
-footer .texto {
-  font-size: 0.875rem;
-}
-
 .visitanos-img {
   display: block;
   width: 100%;

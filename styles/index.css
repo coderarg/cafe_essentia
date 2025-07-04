@@ -4,3 +4,61 @@
     background-position: center;
     height: 500px;
 }
+
+.productos__card{
+    width: 32%;
+}
+.productos__card-imgcontainer{
+    overflow: hidden;
+    border-radius: 12px;
+    height: 400px;
+}
+
+.productos__card-imgcontainercafe{
+    overflow: hidden;
+    border-radius: 12px;
+    height: 600px;
+}
+
+.productos__card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+/* Extra small */
+@media (width < 576px) {
+    header {
+        height: 100px;
+    }
+}
+
+/* Small */
+@media (width >= 576px) {
+    header {
+        height: 100px;
+    }
+}
+
+/* Medium */
+@media (width >= 768px) {
+}
+
+/* Large */
+@media (width <= 992px) {
+    .productos__card {
+        width: 80%;
+    }
+}
+
+/* Extra large */
+@media (width >= 1200px) {
+}
+
+/* Extra extra large */
+@media (width >= 1400px) {
+}
+
+

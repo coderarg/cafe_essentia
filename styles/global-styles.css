@@ -87,6 +87,22 @@
     width: 50%;
 }
 
+footer .social-icons {
+  margin-bottom: 1rem;
+}
+
+footer .social-icons i {
+  margin: 0 .75rem;
+  font-size: 1.5rem;
+  color: var(--texto-secundario);
+  vertical-align: middle;
+}
+
+footer .texto {
+  font-size: 0.875rem;
+}
+
+
 /* Extra small */
 @media (width < 576px) {
     header {
@@ -124,7 +140,7 @@
     .banner__titulo {
         font-family: var(--fuente-manrope);
         color: var(--texto-blanco);
-        font-size: 60px;
+        font-size: 30px;
         font-weight: 700;
         text-align: center;
     }
@@ -135,7 +151,7 @@
     }
 
     .banner__texto {
-        width: 50%;
+        width: 80%;
     }
 }
 
