@@ -1,0 +1,6 @@
+.banner {
+    background-image: url(../imgs/cafeteria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
