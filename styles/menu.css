@@ -66,17 +66,6 @@ body {
   border-bottom: 0.15rem dotted gray;
 }
 
-/* tamaño y espaciado de los iconos */
-.social-icon {
-  width: 24px;
-  height: 24px;
-  margin: 0 12px;
-}
-
-footer{
-  background-color: var(--fondo);
-}
-
 /* Extra small */
 @media (width < 576px) {
   /* Convierte los col-12 en 3 columnas iguales */
