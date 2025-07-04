@@ -22,6 +22,9 @@
     color: var(--texto-secundario);
 }
 
+body {
+    min-height: 100vh;
+}
 .bg-essentia {
     background-color: var(--fondo);
 }

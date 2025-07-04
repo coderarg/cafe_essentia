@@ -1,31 +1,10 @@
-/* Ajuste de separación para navbar en mobile */
-@media (max-width: 991.98px) {
-  body {
-    padding-top: 100px;
-  }
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-@media (max-width: 576px) {
-  main h1,
-  h4,
-  p,
-  span,
-  .accordion-button {
-    text-align: left !important;
-  }
-
-  main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  hr {
-    border: none;
-    border-top: 1px dashed #c0b6a5;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-  }
-}
 
 .button_menu {
   background-color: var(--botones);
@@ -47,7 +26,6 @@
   font-size: 25px;
   font-weight: bold;
   color: #000 !important;
-  transition: background 0.2s;
   border: none;
   box-shadow: none;
   padding: 1.1rem 1.5rem;
