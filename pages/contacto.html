@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/global-styles.css" />
+    <link rel="stylesheet" href="../styles/global-styles.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/contacto.css" type="text/css" />
     <meta name="description"
         content="Essentia es un café que ofrece una experiencia única con un enfoque en la calidad y el bienestar.">
     <meta name="keywords" content="café, calidad, experiencia, Essentia">
     <meta name="author" content="Essentia">
-
     <title>Essentia</title>
 </head>
 
@@ -19,7 +19,7 @@
     <header>
         <nav class=" navbar navbar-expand-lg mt-4 mt-lg-0 py-4 py-lg-2">
             <div class="container-fluid">
-                <a class="navbar-brand titulo ms-4 ms-lg-2" href="#">Essentia</a>
+                <a class="navbar-brand titulo ms-4 ms-lg-2" href="../index.html">ESSENTIA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -60,84 +60,91 @@
         </nav>
     </header>
     <main>
-        <div class="container texto mb-5" style="max-width: 900px; font-family: var(--fuente-manrope);"></div>
-        <section class="container my-5">
-            <h2 class="titulo-principal mb-4 titulo">Contacto</h2>
-            <p class="mb-3 titulo d-none d-sm-block" style="font-size: 20px;">
-                ¡Nos encantaría saber de ti! Si tenés alguna pregunta sobre nuestro café, querés darnos tu opinión
-                o simplemente saludarnos, no dudes en contactarnos.
-            </p>
-
-            <p class="mb-3 titulo d-block d-sm-none" style="font-size: 20px;">Si te gustó nuestro espacio y te gustaría
-                hacer de él tu nuevo
-                lugar de trabajo, enviános tu CV y en caso de haber puestos vacantes.
-                Estamos abiertos a nuevos proveedores, también podes enviarnos un mensaje en caso que quieras charlar
-                con un café de por medio. </p>
-            <form class="formulario d-block d-sm-none ">
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <input type="text" class="form-control" id="apellido" placeholder="Correo electrónico">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje..."></textarea>
-                </div>
-
-                <div class="text-center ">
-                    <button type="submit" class="btn button_menu mx-3 px-4">Contactar</button>
-                </div>
-
-            </form>
-            <h3 class="titulo-secundario mb-3 titulo mt-3">Ubicación</h3>
-            <div class="mb-5" style="display: flex; justify-content: center;">
-                <img src="../imgs/contacto.png" alt="Mapa de ubicación" style="
-                    width: 80%; 
-                    max-width: 900px; 
-                    border-radius: 18px; 
-                    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
-                    display: block;
-                ">
+        <div class="col-12 col-md-8 mx-auto texto mb-5">
+            <div>
+                <h2 class="titulo">Contacto</h2>
+                <p>
+                    ¡Nos encantaría saber de ti! Si tenés alguna pregunta sobre nuestro café, querés darnos tu opinión
+                    o simplemente saludarnos, no dudes en contactarnos.
+                </p>
             </div>
 
-            <h3 class="fw-bold" style="color: var(--texto-principal);">Información de Contacto</h3>
-            <div class="row">
-                <div class="col-6 mb-3">
-                    <hr>
-                    <strong style="color: var(--texto-secundario);">Dirección</strong><br>
-                    <p class="titulo" style="font-size: 20px;">Alvear 123, San Martín, CABA</p>
-                </div>
-                <div class="col-6 mb-3">
-                    <hr>
-                    <strong style="color: var(--texto-secundario);">Phone</strong><br>
-                    <p class="titulo" style="font-size: 20px;">(555) 123-4567</p>
-                </div>
-                <div class="col-12 mb-3">
-                    <hr>
-                    <strong style="color: var(--texto-secundario);">Email</strong><br>
-                    <p class="titulo" style="font-size: 20px;">info@essentia.com</p>
-                </div>
+            <div class="container mb-5">
+                <form id="contactForm" novalidate>
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label fs-5">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" required>
+                        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label fs-5">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                        <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMessage" class="form-label fs-5">Mensaje:</label>
+                        <textarea class="form-control" id="inputMessage" rows="6" required></textarea>
+                        <div class="invalid-feedback">Escribe un mensaje.</div>
+                    </div>
+                    <div id="mensaje_respuesta">
+                    </div>
+                    <button type="submit" class="btn btn-dark py-2 px-5 mx-auto">Enviar</button>
+                </form>
             </div>
-            <h3 class="titulo-secundario mb-3 titulo">Horarios</h3>
-            <div class="row texto" style="max-width: 700px;">
+
+
+            <h3 class="titulo">Ubicación</h3>
+            <img class="ubicacion__img" src="../imgs/contacto.png" alt="Mapa de ubicación">
+
+            <div>
+                <h3 class="titulo">Información de Contacto</h3>
                 <div class="row">
-                    <div class="col-12 col-sm-6 mb-3">
-                        <hr>
-                        <strong>Martes a Viernes</strong><br>
-                        <p class="titulo" style="font-size: 20px;">7:00 AM - 7:00 PM</p>
+                    <div class="col-12 col-md-4 mb-3 py-3">
+                        <div class="mx-1 datos__info">
+                            <p>
+                                <strong>Dirección</strong>
+                            </p>
+                            <p class="titulo" style="font-size: 20px;">Alvear 123, San Martín, CABA</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 mb-3 ">
-                        <hr>
-                        <strong>Sábados y Domingos</strong><br>
-                        <p class="titulo" style="font-size: 20px;">8:00 AM - 7:00 PM</p>
+                    <div class="col-12 col-md-4 mb-3 py-3">
+                        <div class="mx-1 datos__info">
+                            <p>
+                                <strong>Teléfono</strong>
+                            </p>
+                            <p class="titulo" style="font-size: 20px;">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3 py-3">
+                        <div class="mx-1 datos__info">
+                            <p>
+                                <strong>Email</strong>
+                            </p>
+                            <p class="titulo" style="font-size: 20px;">info@essentia.com</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
+            <div>
+                <h3 class="titulo">Horarios</h3>
+                <div class="row texto" style="max-width: 700px;">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3 py-3">
+                            <div class="datos__info mx-1">
+                                <p><strong>Martes a Viernes</strong></p>
+                                <p class="titulo" style="font-size: 20px;">7:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3 py-3 ">
+                            <div class="datos__info mx-1">
+                                <p><strong>Sábados y Domingos</strong></p>
+                                <p class="titulo" style="font-size: 20px;">8:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="container text-center py-4">
@@ -152,6 +159,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="../scripts/contacto.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,8 @@
+.ubicacion__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.datos__info {
+    border-top: 2px solid #E5E8EB
+}
