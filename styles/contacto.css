@@ -6,3 +6,10 @@
 .datos__info {
     border-top: 2px solid #E5E8EB
 }
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin-bottom: 2rem;
+}
